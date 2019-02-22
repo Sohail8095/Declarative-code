@@ -1,25 +1,32 @@
 pipeline
         agent any
                 stages {
-                        stage('One') {
+                        stage('One') 
+                        {
                                 steps {
                                         echo 'Hi, This is Sohail'
-                                }
+                                      }
                         }
                         
-                        stage('Two') {
-                                steps {
+                        stage('Two') 
+                        {
+                                steps 
+                                {
                                         input('Do you want to proceed')
                                 }
                         }
                         
-                        stage('Three') {
-                                when {
-                                       not {
+                        stage('Three') 
+                        {
+                                when 
+                                {
+                                       not 
+                                        {
                                              branch "master"
-                                       }
+                                        }
                                 }
-                                steps {
+                                steps 
+                                {
                                         echo "Hello"
                                 }
                         }
