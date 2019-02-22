@@ -3,9 +3,10 @@ pipeline
                 stages {
                         stage('One') 
                         {
-                                steps {
+                                steps 
+                                {
                                         echo 'Hi, This is Sohail'
-                                      }
+                                }
                         }
                         
                         stage('Two') 
@@ -25,10 +26,9 @@ pipeline
                                              branch "master"
                                         }
                                 }
+                        }       
                                 steps 
                                 {
                                         echo "Hello"
                                 }
-                        }
-                        }
                         }
